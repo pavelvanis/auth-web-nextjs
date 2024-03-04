@@ -7,7 +7,7 @@ const MainLayout = async ({ children }: { children: ReactNode }) => {
   const session = await getServerSession(authOptions);
 
   // When the session is not present, the user is redirected to the sign-in page.
-  if (!session) return redirect("/api/auth/signin");
+  // if (!session) return redirect("/api/auth/signin");
 
   return <>{children}</>;
 };
